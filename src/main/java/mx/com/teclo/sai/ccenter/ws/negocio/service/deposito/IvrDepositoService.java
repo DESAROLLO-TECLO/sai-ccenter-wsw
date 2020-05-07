@@ -1,11 +1,12 @@
 package mx.com.teclo.sai.ccenter.ws.negocio.service.deposito;
 
-import mx.com.teclo.sai.ccenter.ws.persistencia.vo.respuesta.RespuestaVO;
+import mx.com.teclo.arquitectura.ortogonales.responsehttp.BadRequestHttpResponse;
+import mx.com.teclo.sai.ccenter.ws.persistencia.vo.respuesta.DepositoVO;
 
 public interface IvrDepositoService{
 	
-	public RespuestaVO ivrObtenerDepositoIdPorPlaca(String placa);
+	DepositoVO ivrObtenerDepositoIdPorPlaca(String placa) throws BadRequestHttpResponse;
 	
-	public RespuestaVO ivrObtenerDepositoIdPorInfraccion(String infraccion);
+	DepositoVO ivrObtenerDepositoIdPorInfraccion(String infraccion) throws BadRequestHttpResponse;
 
 }

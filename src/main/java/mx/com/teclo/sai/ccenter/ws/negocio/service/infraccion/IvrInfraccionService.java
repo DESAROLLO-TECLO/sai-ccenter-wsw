@@ -1,10 +1,10 @@
 package mx.com.teclo.sai.ccenter.ws.negocio.service.infraccion;
 
-import mx.com.teclo.sai.ccenter.ws.persistencia.vo.respuesta.RespuestaVO;
+import mx.com.teclo.arquitectura.ortogonales.responsehttp.BadRequestHttpResponse;
 
 public interface IvrInfraccionService {
 	
 	
-	public RespuestaVO obtenerNumeroInfraccionesPorPlaca(String placa);
+	Integer obtenerNumeroInfraccionesPorPlaca(String placa) throws BadRequestHttpResponse;
 
 }

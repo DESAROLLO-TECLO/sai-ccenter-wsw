@@ -6,8 +6,8 @@
 	<artifactId>sai-ccenter-wsw</artifactId>
 	<version>${revision}</version>
 	<packaging>war</packaging>
-	<name>sspcdmxccenter_wsw</name>
-	<description>Modulo Web Service Call Center</description>
+	<name>tecloivr_wsw</name>
+	<description>Modulo Web Service Interactivo de Voz</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -21,7 +21,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
-		<revision>v600r16</revision>
+		<revision>v200r1</revision>
+		<name-war>tecloivr</name-war>
+		<contexto>sscivr</contexto>
+		<secondname>wsw</secondname>
+		<ambient>prod</ambient>
+		<m2eclipse.wtp.contextRoot>${contexto}</m2eclipse.wtp.contextRoot>
 	</properties>
 
 	<dependencies>
@@ -88,7 +93,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.name}_${project.version}</finalName>
+		<finalName>${name-war}_${revision}${ambient}_${secondname}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
