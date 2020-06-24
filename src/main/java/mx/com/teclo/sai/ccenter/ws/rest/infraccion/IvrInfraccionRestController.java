@@ -25,7 +25,7 @@ public class IvrInfraccionRestController {
 	 * @return Integer
 	 * @throws BadRequestHttpResponse
 	 */
-	@RequestMapping(value="/ivrTinenInfraccionesPorPlaca", method = RequestMethod.GET)
+	@RequestMapping(value="/ivrTienenInfraccionesPorPlaca", method = RequestMethod.GET)
 	public ResponseEntity<Integer> obtenerInfraccionesPorPlaca(
 			@RequestParam(name = "placa", defaultValue = "null") String placa) 
 					throws BadRequestHttpResponse{
